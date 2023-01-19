@@ -1,0 +1,78 @@
+:root {
+  --black: #343642;
+  --blue: #348899;
+  --gray: #979c9c;
+  --white: #f2ebc7;
+  --red: #962d3e;
+  --fontsize: 1.5rem;
+  --name: "Baloo 2", cursive;
+  --serif1: "Cinzel", serif;
+  --cursive: "Satisfy", cursive;
+  --mono1: "Source Code Pro", monospace;
+  --mono2: "Nova Mono", monospace;
+  --sans: "Sofia Sans", sans-serif;
+}
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* base & reset above */
+
+/* generic styles below */
+
+body {
+  font-size: var(--fontsize);
+  font-family: var(--sans);
+  background-color: var(--black);
+  color: var(--white);
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#name {
+  font-family: var(--name);
+  color: var(--blue);
+  font-size: 4rem;
+  line-height: 4rem;
+  padding: 2rem;
+  text-transform: uppercase;
+}
+
+#nav-bar {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  justify-content: space-evenly;
+  gap: 2rem;
+  padding: 10px 1rem;
+}
+
+header {
+  margin: 0 auto;
+  background-color: var(--gray);
+  color: var(--red);
+}
+#page {
+  min-height: 100vh;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  background-color: var(--red);
+  display: flex;
+  flex-flow: column wrap;
+}
+
